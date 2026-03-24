@@ -1,20 +1,33 @@
-/* 전체 선택자 */
-* {
-  color: black;
+.container {
+  display: flex;
+  gap: 50px;
 }
 
-/* 태그 선택자 */
-div {
-  color: red;
+.container > div {
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+  border: 1px solid black;
 }
 
-/* 클래스 선택자 */
-.title {
-  background-color: yellow;
+.box > div {
+  border: 1px solid black;
 }
 
-/* 아이디 선택자 */
-#username {
-  font-size: 20px;
-  color: blue;
+#row-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#column-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+#center-box {
+  display: flex;
+  justify-content: end;
+  align-items: end;
 }
